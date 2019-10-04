@@ -6,7 +6,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Random rand = new Random();
+
             Console.WriteLine("Hello World!");
         }
     }
+
 }
