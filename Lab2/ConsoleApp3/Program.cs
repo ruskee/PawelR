@@ -51,7 +51,7 @@ namespace ConsoleApp3
                 suma += odleglosc;
                 licznik++;
             }
-            double wynik = (double)suma / licznik;
+            double wynik = (double)suma / (licznik-1);
 
             Console.WriteLine(wynik);
         }
