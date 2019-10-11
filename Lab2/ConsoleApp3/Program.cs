@@ -86,29 +86,38 @@ namespace ConsoleApp3
             int licznik = 1;
             int[] liczniki = { 1, 1, 1 };
 
-            string linia = Console.ReadLine();
+            string linia =  string.Empty; //Console.ReadLine();
             while (linia != "exit")
             {
-             
+
                 linia = Console.ReadLine();
 
                 switch (linia)
                 {
                     case "A":
-                        Console.WriteLine("A " + liczniki[0]++);
+                        Console.WriteLine("A " + liczniki[0]++); //Litera gdyż typ "linia" to string
+                        licznik++;
                         break;
 
                     case "B":
                         Console.WriteLine("B " + liczniki[1]++);
+                        licznik++;
                         break;
 
                     case "C":
                         Console.WriteLine("C " + liczniki[2]++);
+                        licznik++;
                         break;
 
                     default:
                         Console.WriteLine("Zły kod produktu");
                         break;
+                }
+
+                if (licznik >= 10)
+                {
+                    Console.WriteLine("Łacznie wyprodukowano max na dziś");
+                    break;
                 }
 
             }
