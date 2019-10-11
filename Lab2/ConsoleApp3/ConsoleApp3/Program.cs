@@ -37,7 +37,7 @@ namespace ConsoleApp3
 
             int liczba = Convert.ToInt32(odpowiedz);
 
-            Console.WriteLine((liczba % 2 == 0) ? "Parzystaa" : "Nieparzysta");
+            Console.WriteLine((liczba % 2 == 0) ? "Parzysta" : "Nieparzysta");
 
             Console.ReadKey();
         }
