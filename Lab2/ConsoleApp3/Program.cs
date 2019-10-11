@@ -61,7 +61,7 @@ namespace ConsoleApp3
             */
 
 
-            //Napisać program który za kazdym wcisnieciem klawisza enter wypisuje unikatowy komunikat na ekranie (liczba naturalna)
+            //Napisać program który za kazdym wcisnieciem klawisza enter wypisuje unikatowy komunikat na ekranie (liczba naturalna) az do wpisania wyrazu konczącego program
             //Zmienic program w taki sposób aby po 20 razach program zakonczyl sie
 
             /*
