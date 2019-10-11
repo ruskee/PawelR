@@ -60,13 +60,20 @@ namespace ConsoleApp3
 
 
             //Napisać program który za kazdym wcisnieciem klawisza enter wypisuje unikatowy komunikat na ekranie
+            //Zmienic program w taki sposób aby po 20 razach program zakonczyl sie
 
             int licznik = 1;
-            string linia = string.Empty;
-            while (linia != "exit") 
+            string linia = Console.ReadLine(); //opcjonalnie = string.Empty;
+            while (linia != "exit")
             {
                 Console.WriteLine(licznik++);
                 linia = Console.ReadLine();
+
+                if (licznik == 20)
+                {
+                    break;
+                }
+
             }
           
 
