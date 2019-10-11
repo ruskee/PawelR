@@ -37,7 +37,7 @@ namespace ConsoleApp3
 
             int liczba = Convert.ToInt32(odpowiedz);
 
-            Console.WriteLine((liczba % 2 == 0) ? "Parzysta" : "Nieparzysta"); //Szybsze rozwiązanie
+            Console.WriteLine((liczba % 2 == 0) ? "Parzysta" : "Nieparzysta"); //Szybsze rozwiązanie niż na ifach
 
             Console.ReadKey();
             */
@@ -61,6 +61,14 @@ namespace ConsoleApp3
 
             //Napisać program który za kazdym wcisnieciem klawisza enter wypisuje unikatowy komunikat na ekranie
 
+            int licznik = 1;
+            string linia = string.Empty;
+            while (linia != "exit") 
+            {
+                Console.WriteLine(licznik++);
+                linia = Console.ReadLine();
+            }
+          
 
         }
     }
