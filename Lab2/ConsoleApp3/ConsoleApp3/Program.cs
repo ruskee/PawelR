@@ -21,6 +21,7 @@ namespace ConsoleApp3
             {
                 Console.WriteLine("Nieparzysta");
             }
+            Console.ReadKey();
         }
     }
 }
