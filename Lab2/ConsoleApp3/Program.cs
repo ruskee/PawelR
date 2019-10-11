@@ -31,6 +31,8 @@ namespace ConsoleApp3
             }
             Console.ReadKey();
             */
+
+
             /*
             Console.WriteLine("Podaj liczbę: ");
             string odpowiedz = Console.ReadLine();
@@ -41,6 +43,8 @@ namespace ConsoleApp3
 
             Console.ReadKey();
             */
+
+
             /*
             double odleglosc = int.MinValue;
             double suma = 0, licznik = 0;
@@ -57,11 +61,10 @@ namespace ConsoleApp3
             */
 
 
-
-
-            //Napisać program który za kazdym wcisnieciem klawisza enter wypisuje unikatowy komunikat na ekranie
+            //Napisać program który za kazdym wcisnieciem klawisza enter wypisuje unikatowy komunikat na ekranie (liczba naturalna)
             //Zmienic program w taki sposób aby po 20 razach program zakonczyl sie
 
+            /*
             int licznik = 1;
             string linia = Console.ReadLine(); //opcjonalnie = string.Empty;
             while (linia != "exit")
@@ -75,8 +78,44 @@ namespace ConsoleApp3
                 }
 
             }
-          
+          */
+
+
+            //Zliczanie 3 produktów, każdy osobno
+
+            int licznik = 1;
+            int[] liczniki = { 1, 1, 1 };
+
+            string linia = Console.ReadLine();
+            while (linia != "exit")
+            {
+             
+                linia = Console.ReadLine();
+
+                switch (linia)
+                {
+                    case "A":
+                        Console.WriteLine("A " + liczniki[0]++);
+                        break;
+
+                    case "B":
+                        Console.WriteLine("B " + liczniki[1]++);
+                        break;
+
+                    case "C":
+                        Console.WriteLine("C " + liczniki[2]++);
+                        break;
+
+                    default:
+                        Console.WriteLine("Zły kod produktu");
+                        break;
+                }
+
+            }
+
 
         }
     }
+
 }
+    
