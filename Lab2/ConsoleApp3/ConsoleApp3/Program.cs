@@ -8,19 +8,37 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
+            /*
+            Console.WriteLine("Podaj liczbę: ");
+            string odpowiedz = Console.ReadLine();
+
+            int liczba;
+            bool czySieUdalo = int.TryParse(odpowiedz, out liczba);
+            if (czySieUdalo)
+            {
+                if (liczba % 2 == 0)
+                {
+                    Console.WriteLine("Parzysta");
+                }
+                else
+                {
+                    Console.WriteLine("Nieparzysta");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Nie podano liczby");
+            }
+            Console.ReadKey();
+            */
+
             Console.WriteLine("Podaj liczbę: ");
             string odpowiedz = Console.ReadLine();
 
             int liczba = Convert.ToInt32(odpowiedz);
 
-            if (liczba % 2 == 0)
-            {
-                Console.WriteLine("Parzysta");
-            }
-            else
-            {
-                Console.WriteLine("Nieparzysta");
-            }
+            Console.WriteLine((liczba % 2 == 0) ? "Parzystaa" : "Nieparzysta");
+
             Console.ReadKey();
         }
     }
