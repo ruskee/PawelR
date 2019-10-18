@@ -7,6 +7,7 @@ namespace Lab3
         static void Main(string[] args)
         {
             string tekst = string.Empty;
+            int suma = 0, licznik = -1;
             while(tekst != "0")
             {
                 tekst = Console.ReadLine();
@@ -15,12 +16,17 @@ namespace Lab3
                 if (czyPrzekonwertowano)
                 {
                     suma += ocena;
+                    licznik++;
                 }
                 else
                 {
                     Console.WriteLine("Podano niepoprawną liczbe");
                 }
             }
+
+            float srednia = (float)suma / licznik;
+            Console.WriteLine("Srednia wynosi: ");
+            Console.WriteLine(srednia);
         }
     }
 }
