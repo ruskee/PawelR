@@ -4,19 +4,30 @@ namespace Lab3
 {
     class Program
     {
-        static void Main(string[] args)
+
+        static double ObliczSrednia(string nazwa)
         {
             string tekst = string.Empty;
-            int suma = 0, licznik = -1;
-            while(tekst != "0")
+            double suma = 0;
+            int licznik = 0;
+
+            while (tekst != "0")
             {
+                Console.WriteLine("Wpisz ocene dla: " + nazwa);
                 tekst = Console.ReadLine();
-                int ocena;
-                bool czyPrzekonwertowano = int.TryParse(tekst, out ocena);
+                double ocena;
+                bool czyPrzekonwertowano = double.TryParse(tekst, out ocena);
                 if (czyPrzekonwertowano)
                 {
-                    suma += ocena;
-                    licznik++;
+                    if (ocena > 0 && ocena <= 5)
+                    {
+                        suma += ocena;
+                        licznik++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("To nie jest poprawna liczba");
+                    }
                 }
                 else
                 {
@@ -24,9 +35,29 @@ namespace Lab3
                 }
             }
 
-            float srednia = (float)suma / licznik;
-            Console.WriteLine("Srednia wynosi: ");
-            Console.WriteLine(srednia);
+            double wynik = suma / licznik;
+            Console.WriteLine("Srednia z " + nazwa + " to: " + wynik);
+            return wynik;
+
+        }
+        static void Main(string[] args)
+        {
+            string[] przedmioty = { "P1", "BOIO", "PTC" };
+            double[] srednie = new double[przedmioty.Length];
+
+            for(int i = 0; i < przedmioty.Length; i++)
+            {
+                srednie[i] = ObliczSrednia(przedmioty[i]);
+            }
+            double sredniaCalkowita = 0;
+            
+            foreach(double sredniaCzastkowa in srednie)
+            {
+                sredniaCalkowita += sredniaCzastkowa;
+            }
+            Console.WriteLine("Srednia calkowita: " + sredniaCalkowita / przedmioty.Length);
+            
+         
         }
     }
 }
