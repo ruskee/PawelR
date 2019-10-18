@@ -12,6 +12,14 @@ namespace Lab3
                 tekst = Console.ReadLine();
                 int ocena;
                 bool czyPrzekonwertowano = int.TryParse(tekst, out ocena);
+                if (czyPrzekonwertowano)
+                {
+                    suma += ocena;
+                }
+                else
+                {
+                    Console.WriteLine("Podano niepoprawną liczbe");
+                }
             }
         }
     }
