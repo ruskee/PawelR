@@ -6,7 +6,10 @@ namespace Lab6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Samochod mojSamochod = new Samochod();
+            mojSamochod.Model = "Multipla";
+            
+
         }
     }
 }
