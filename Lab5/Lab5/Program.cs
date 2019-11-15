@@ -11,11 +11,11 @@ namespace Lab5
         {
             Ksiazka[,,] tab = new Ksiazka[3,6,10];
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < tab.GetLength(0); i++)
             {
-                for (int j = 0; j < 6; j++)
+                for (int j = 0; j < tab.GetLength(1); j++)
                 {
-                    for (int k = 0; k < 10; k++)
+                    for (int k = 0; k < tab.GetLength(2); k++)
                     {
                         tab[i, j, k] = new Ksiazka("Pan Tadeusz", "Mickiewicz",i,j,k);
                     }
@@ -24,11 +24,11 @@ namespace Lab5
             tab[2, 5, 3] = new Ksiazka("Potop", "Sienkiewicz",2,5,3); //Wykorzystanie klasy Ksiazka
        
             
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < tab.GetLength(0); i++)
             {
-                for (int j = 0; j < 6; j++)
+                for (int j = 0; j < tab.GetLength(1); j++)
                 {
-                    for (int k = 0; k < 10; k++)
+                    for (int k = 0; k < tab.GetLength(2); k++)
                     {
                         Console.WriteLine("Regał nr {0}, Półka nr {1}, Miejsce nr {2}", i, j, k);
                         Console.WriteLine(tab[i, j, k].Tytul + " " + tab[i, j, k].Autor);
@@ -42,11 +42,11 @@ namespace Lab5
             Console.Write("Podaj tytul lub autora ktorego szukasz: ");
             string nazwa = Convert.ToString(Console.ReadLine());
 
-             for (int i = 0; i < 3; i++)
+             for (int i = 0; i < tab.GetLength(0); i++)
              {
-                for (int j = 0; j < 6; j++)
+                for (int j = 0; j < tab.GetLength(1); j++)
                 {
-                    for (int k = 0; k < 10; k++)
+                    for (int k = 0; k < tab.GetLength(2); k++)
                     {
                         if (nazwa == tab[i, j, k].Tytul || nazwa == tab[i, j, k].Autor)
                         {
