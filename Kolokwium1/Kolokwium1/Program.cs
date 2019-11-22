@@ -168,7 +168,7 @@ namespace Kolokwium1
                     //Zadanie 5
 
                     //EBook ksiazka = new EBook(1, 2, DateTime, DateTime, 15, 5);
-                    //Console.WriteLine(ksiazka.Autor + " " + ksiazka.Tytul + " " +ksiazka.DataWydania);
+                    //ksiazka.Zadanie5_Wypiszdane();
 
                     break;
 
