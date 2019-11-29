@@ -8,7 +8,7 @@ namespace Kolokwium1
 {
 
     class EBook
-    {  
+    {
         private int Autor { get; set; }
         private int Tytul { get; set; }
         private DateTime DataWydania { get; set; }
@@ -42,7 +42,6 @@ namespace Kolokwium1
             Console.WriteLine("Podaj n:");
             string linia = Console.ReadLine();
             
-
             int[] y = new int[100];
             int n0 = 1;    
       
@@ -75,7 +74,7 @@ namespace Kolokwium1
                 {
                     if (l == 0)
                     {
-                        throw new DivideByZeroException();                      
+                        throw new DivideByZeroException();
                     }
                     Console.WriteLine(tab[i]);
                 }
@@ -108,7 +107,8 @@ namespace Kolokwium1
             float funkcja(int[,] tab)
             {
                 int min = 1000;
-                for (int i = 0; i < tab.GetLength(0); i++) {
+                for (int i = 0; i < tab.GetLength(0); i++)
+                {
                     for (int j = 0; j < tab.GetLength(1); j++)
                     {
                         if (tab[i, j] < min)
@@ -143,7 +143,8 @@ namespace Kolokwium1
             Console.WriteLine("Podaj numer zadania");
             string linia = Console.ReadLine();
 
-            switch (linia) {
+            switch (linia)
+            {
 
                 case "1":
 
@@ -175,7 +176,7 @@ namespace Kolokwium1
                 default:
                     Console.WriteLine("Brak zadania o podanym numerze");
                     break;
-        }
+            }
             Console.ReadKey();
         }
     }
