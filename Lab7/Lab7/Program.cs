@@ -11,12 +11,16 @@ namespace Lab7
         public int id;
         public string imie;
         public string nazwisko;
+        public DateTime wiek;
+        public string kraj;
 
-        public Osoba(int id, string imie, string nazwisko)
-        {
+        public Osoba(int id, string imie, string nazwisko, DateTime wiek, string kraj)
+        {    
             this.id = id;
             this.imie = imie;
             this.nazwisko = nazwisko;
+            this.wiek = wiek;
+            this.kraj = kraj;
         }
     }
 
@@ -68,26 +72,41 @@ namespace Lab7
             Osoba szukana = osoby.FirstOrDefault(x => x.nazwisko == "ccc");
             Console.WriteLine($"{szukana.id}:{szukana.imie} {szukana.nazwisko}");
             */
-            var nameGen = RandomizerFactory.GetRandomizer(new FieldOptionsFirstName());
+
+            var nameGen = RandomizerFactory.GetRandomizer(new FieldOptionsFirstName()); //Wygenerowanie randomowych danych
             var lastnameGen = RandomizerFactory.GetRandomizer(new FieldOptionsLastName());
+            var age = RandomizerFactory.GetRandomizer(new FieldOptionsDateTime());
+            var country = RandomizerFactory.GetRandomizer(new FieldOptionsCountry());
 
             List<Osoba> osoby = Enumerable.Range(100, 150)
-                .Select(x=>
+                .Select(x =>
                 new Osoba(
                     x,
                     nameGen.Generate(),
-                    lastnameGen.Generate())
+                    lastnameGen.Generate(),
+                    age.Generate().Value,
+                    country.Generate()
+                    )
+
                     ).ToList();
 
-            List<Osoba> alfabetycznie = osoby.OrderBy(x=>x.nazwisko).ThenBy(x=>x.imie).ToList();
-            
-            foreach (var item in alfabetycznie)
+            foreach (var item in osoby)
             {
-                
-                Console.WriteLine($"{item.id}: {item.imie} {item.nazwisko}");
-            
+
+                Console.WriteLine($"{item.id}: {item.imie} {item.nazwisko} {item.wiek} {item.kraj}");
+
             }
-         
+
+            /*
+           List<Osoba> alfabetycznie = osoby.OrderBy(x=>x.nazwisko).ThenBy(x=>x.imie).ToList();
+
+           foreach (var item in alfabetycznie)
+           {
+
+               Console.WriteLine($"{item.id}: {item.imie} {item.nazwisko}");
+
+           }
+           */
 
         }
     }
