@@ -1,7 +1,0 @@
-C:\Users\student\source\repos\PawelR\Kolokwium1\Kolokwium1\bin\Debug\Kolokwium1.exe.config
-C:\Users\student\source\repos\PawelR\Kolokwium1\Kolokwium1\bin\Debug\Kolokwium1.exe
-C:\Users\student\source\repos\PawelR\Kolokwium1\Kolokwium1\bin\Debug\Kolokwium1.pdb
-C:\Users\student\source\repos\PawelR\Kolokwium1\Kolokwium1\obj\Debug\Kolokwium1.csprojAssemblyReference.cache
-C:\Users\student\source\repos\PawelR\Kolokwium1\Kolokwium1\obj\Debug\Kolokwium1.csproj.CoreCompileInputs.cache
-C:\Users\student\source\repos\PawelR\Kolokwium1\Kolokwium1\obj\Debug\Kolokwium1.exe
-C:\Users\student\source\repos\PawelR\Kolokwium1\Kolokwium1\obj\Debug\Kolokwium1.pdb
