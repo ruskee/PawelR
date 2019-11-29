@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "Fare/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Fare.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Fare.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -207,10 +219,50 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "NLipsum/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/NLipsum.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/NLipsum.Core.dll": {}
+        }
+      },
+      "RandomDataGenerator.Net/1.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Fare": "2.1.1",
+          "NLipsum": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/RandomDataGenerator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RandomDataGenerator.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Fare/2.1.1": {
+      "sha512": "HaI8puqA66YU7/9cK4Sgbs1taUTP1Ssa4QT2PIzqJ7GvAbN1QgkjbRsjH+FSbMh1MJdvS0CIwQNLtFT+KF6KpA==",
+      "type": "package",
+      "path": "fare/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fare.2.1.1.nupkg.sha512",
+        "fare.nuspec",
+        "lib/net35/Fare.dll",
+        "lib/net35/Fare.xml",
+        "lib/netstandard1.1/Fare.dll",
+        "lib/netstandard1.1/Fare.xml"
+      ]
+    },
     "Microsoft.NETCore.App/2.1.0": {
       "sha512": "JNHhG+j5eIhG26+H721IDmwswGUznTwwSuJMFe/08h0X2YarHvA15sVAvUkA/2Sp3W0ENNm48t+J7KTPRqEpfA==",
       "type": "package",
@@ -680,11 +732,48 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "NLipsum/1.1.0": {
+      "sha512": "WSEizhJQ5mWEg0OzOUUnCJlA9jHq+TN/Axk/wDdZdEkZcQMnV2qiSiWgBmNIQ66j1GKweWs9V0HnyzxAFUBfyg==",
+      "type": "package",
+      "path": "nlipsum/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/NLipsum.Core.XML",
+        "lib/net20/NLipsum.Core.dll",
+        "lib/netstandard1.0/NLipsum.Core.XML",
+        "lib/netstandard1.0/NLipsum.Core.dll",
+        "lib/portable-net403+sl50+netcore45+wpa81+wp8/NLipsum.Core.XML",
+        "lib/portable-net403+sl50+netcore45+wpa81+wp8/NLipsum.Core.dll",
+        "nlipsum.1.1.0.nupkg.sha512",
+        "nlipsum.nuspec"
+      ]
+    },
+    "RandomDataGenerator.Net/1.0.10": {
+      "sha512": "eT3hqMtCy5fG57SzR3XdQm2UxwZ1Ty2UNKD8UghojYOx8SqcwBuOmRXQ4Jyft7iPK6G5p+k4thp5F7EZrUhsLA==",
+      "type": "package",
+      "path": "randomdatagenerator.net/1.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/RandomDataGenerator.dll",
+        "lib/net35/RandomDataGenerator.pdb",
+        "lib/net45/RandomDataGenerator.dll",
+        "lib/net45/RandomDataGenerator.pdb",
+        "lib/netstandard1.3/RandomDataGenerator.dll",
+        "lib/netstandard1.3/RandomDataGenerator.pdb",
+        "lib/netstandard2.0/RandomDataGenerator.dll",
+        "lib/netstandard2.0/RandomDataGenerator.pdb",
+        "randomdatagenerator.net.1.0.10.nupkg.sha512",
+        "randomdatagenerator.net.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "RandomDataGenerator.Net >= 1.0.10"
     ]
   },
   "packageFolders": {
@@ -732,6 +821,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "RandomDataGenerator.Net": {
+            "target": "Package",
+            "version": "[1.0.10, )"
           }
         },
         "imports": [
