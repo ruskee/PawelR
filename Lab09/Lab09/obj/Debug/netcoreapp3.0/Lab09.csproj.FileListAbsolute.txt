@@ -1,0 +1,11 @@
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\bin\Debug\netcoreapp3.0\Lab09.exe
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\bin\Debug\netcoreapp3.0\Lab09.deps.json
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\bin\Debug\netcoreapp3.0\Lab09.runtimeconfig.json
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\bin\Debug\netcoreapp3.0\Lab09.runtimeconfig.dev.json
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\bin\Debug\netcoreapp3.0\Lab09.dll
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\bin\Debug\netcoreapp3.0\Lab09.pdb
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\obj\Debug\netcoreapp3.0\Lab09.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\obj\Debug\netcoreapp3.0\Lab09.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\obj\Debug\netcoreapp3.0\Lab09.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\obj\Debug\netcoreapp3.0\Lab09.dll
+C:\Users\LENOVO\source\repos\PawelR\Lab09\Lab09\obj\Debug\netcoreapp3.0\Lab09.pdb
