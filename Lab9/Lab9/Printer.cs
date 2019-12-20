@@ -12,7 +12,6 @@ namespace lab09
         private Random _random;
         public event EventHandler<PaperJammedEventArgs> PaperJammed;
         public event EventHandler<OutOfInkEventArgs> OutOfInk;
-
        
         private double _blackInkLevel;
         private double _cyanInkLevel;
@@ -24,7 +23,6 @@ namespace lab09
             Console.WriteLine("Printer: Paper jammed");
         }
         public void Print(int pageNumber)
-
         {
 
             if (_random.NextDouble() < 0.01)
@@ -36,7 +34,7 @@ namespace lab09
 
             {
                 Console.WriteLine("Etykieta");
-                _blackInkLevel -= _random.NextDouble() * (0.1-0.01) + 0.01;
+                _blackInkLevel -= _random.NextDouble() * (0.1 - 0.01) + 0.01;
                 _cyanInkLevel -= _random.NextDouble() * (0.1);
                 _magentaInkLevel -= _random.NextDouble() * (0.1);
                 _yellowInkLevel -= _random.NextDouble() * (0.1);
@@ -60,7 +58,6 @@ namespace lab09
             }
 
         }
-
 
         private void InternalEventHandler(object sender, PaperJammedEventArgs args)
         {
@@ -89,7 +86,6 @@ namespace lab09
         private class Ink
         {
             public double Level { get; set; }
-
         }
 
     }

@@ -8,7 +8,6 @@ namespace lab09
 {
     class Program
     {
-
         private static bool _canPrint = true;
         static void Main(string[] args)
         {

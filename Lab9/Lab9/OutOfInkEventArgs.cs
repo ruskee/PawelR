@@ -11,8 +11,7 @@ namespace lab09
 
         public OutOfInkEventArgs(string inkColor, int page) : base(page)
         {
-            this.InkColor = inkColor;
-            
+            this.InkColor = inkColor;          
         }
 
         public string InkColor { get; set; }
