@@ -167,6 +167,7 @@ namespace Kolokwium1_Poprawa
                     break;
 
                 case "5":
+                    //Zadanie5
                     EBook eBook = new EBook("Bolesław Prus", "Lalka", new DateTime(1890 / 1 / 1), new DateTime(2019 / 12 / 15), 25.55, 10);
                     break;
 
