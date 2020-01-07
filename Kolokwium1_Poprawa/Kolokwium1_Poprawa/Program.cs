@@ -55,7 +55,7 @@ namespace Kolokwium1_Poprawa
 
         static void Zadanie3()
         {
-            int[,] jeden = new int[3, 3];
+            int[,] jeden = new int[4, 3];
             int[,] dwa = new int[3, 8];
 
             int rozmiar1 = Math.Max(jeden.GetLength(0), dwa.GetLength(0));
@@ -73,7 +73,7 @@ namespace Kolokwium1_Poprawa
                 }
             }
 
-            for (int i = 0; i < jeden.GetLength(0); i++)
+            for (int i = 0; i < dwa.GetLength(0); i++)
             {
                 for (int j = 0; j < dwa.GetLength(1); j++)
                 {
@@ -82,9 +82,9 @@ namespace Kolokwium1_Poprawa
                 }
             }
 
-            for (int i = 0; i < jeden.GetLength(0); i++)
+            for (int i = 0; i < rozmiar1; i++)
             {
-                for (int j = 0; j < dwa.GetLength(1); j++)
+                for (int j = 0; j < rozmiar2; j++)
                 {
                     Console.Write(wynik[i, j]);
                 }
@@ -92,24 +92,8 @@ namespace Kolokwium1_Poprawa
             }
         }
 
-        static void Zadanie4()
+        public static int[,] NewTable1()
         {
-            float funkcja(int[,] tab)
-            {
-                int min = int.MaxValue;
-                for (int i = 0; i < tab.GetLength(0); i++)
-                {
-                    for (int j = 0; j < tab.GetLength(1); j++)
-                    {
-                        if (tab[i, j] < min)
-                        {
-                            min = tab[i, j];
-                        }
-                    }
-                }
-                return min;
-            }
-
             int[,] tab1 = new int[3, 5];
 
             Random rnd = new Random();
@@ -124,9 +108,70 @@ namespace Kolokwium1_Poprawa
                 Console.WriteLine();
             }
 
-            Console.WriteLine("\nNajmniejszy element w tej tablicy to: " + funkcja(tab1));
+            return tab1;
         }
 
+        static void Zadanie4(int[,] tab)
+        {
+
+            int min = int.MaxValue;
+            for (int i = 0; i < tab.GetLength(0); i++)
+            {
+                for (int j = 0; j < tab.GetLength(1); j++)
+                {
+                    if (tab[i, j] < min)
+                    {
+                        min = tab[i, j];
+                    }
+                }
+            }
+
+            Console.WriteLine("Najmniejszy element w tej tablicy to: " + min);
+            Console.WriteLine();
+        }
+
+        public static void Zadanie4(int[][] tab)
+        {
+
+            int min = int.MaxValue;
+
+            for (int i = 0; i < tab.Length; i++)
+            {
+                for (int j = 0; j < tab[i].Length; j++)
+                {
+                    if (tab[i][j] < min)
+                    {
+                        min = tab[i][j];
+                    }
+                }
+            }
+
+            Console.WriteLine("Najmniejszy element w tej tablicy poszarpanej to: " + min);
+        }
+
+        public static int[][] NewTable2()
+        {
+            Random rnd = new Random();
+
+            int[][] tab2 = new int[rnd.Next(1, 10)][];
+
+            for (int i = 0; i < tab2.Length; i++)
+            {
+                tab2[i] = new int[rnd.Next(1, 10)];
+            }
+
+            for (int i = 0; i < tab2.Length; i++)
+            {
+                for (int j = 0; j < tab2[i].Length; j++)
+                {
+                    tab2[i][j] = rnd.Next(0, 100);
+                    Console.Write(tab2[i][j] + "\t");
+                }
+                Console.WriteLine();
+            }
+
+            return tab2;
+        }
 
         static void Main(string[] args)
         {
@@ -158,12 +203,13 @@ namespace Kolokwium1_Poprawa
                     break;
 
                 case "3":
-                    
                     Zadanie3();
                     break;
 
                 case "4":
-                    Zadanie4();
+                    Console.WriteLine();
+                    Zadanie4(NewTable1());
+                    Zadanie4(NewTable2());
                     break;
 
                 case "5":

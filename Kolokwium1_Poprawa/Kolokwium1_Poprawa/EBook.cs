@@ -6,36 +6,36 @@ namespace Kolokwium1_Poprawa
 {
     class EBook
     {
-        private readonly string Autor;
-        private readonly string Tytul;
-        private readonly DateTime DataWydania;
-        private DateTime DataOstatniegoZakupu;
-        private double CenaStandardowa;
-        private int Obnizka;
-        private double AktualnaCena;
+        private readonly string _autor;
+        private readonly string _tytul;
+        private readonly DateTime _dataWydania;
+        private DateTime _dataOstatniegoZakupu;
+        private double _cenaStandardowa;
+        private int _obnizka;
+        private double _aktualnaCena;
 
         public EBook(string autor, string tytul, DateTime dataWydania, DateTime dataOstatniegoZakupu, double cenaStandardowa, int obnizka)
         {
-            Autor = autor;
-            Tytul = tytul;
-            DataWydania = dataWydania;
-            DataOstatniegoZakupu = dataOstatniegoZakupu;
-            CenaStandardowa = cenaStandardowa;
-            Obnizka = obnizka;
+            _autor = autor;
+            _tytul = tytul;
+            _dataWydania = dataWydania;
+            _dataOstatniegoZakupu = dataOstatniegoZakupu;
+            _cenaStandardowa = cenaStandardowa;
+            _obnizka = obnizka;
         }
 
-        public string autor { get => Autor; }
-        public string tytul { get => Tytul; }
-        public DateTime dataWydania { get => DataWydania; }
+        public string autor { get => _autor; }
+        public string tytul { get => _tytul; }
+        public DateTime dataWydania { get => _dataWydania; }
         public DateTime dataOstatniegoZakupu
         {
             get
             {
-                return DataOstatniegoZakupu;
+                return _dataOstatniegoZakupu;
             }
             set
             {
-                if (value.Date < DataOstatniegoZakupu.Date) DataOstatniegoZakupu = value;
+                if (value.Date < _dataOstatniegoZakupu.Date) _dataOstatniegoZakupu = value;
             }
         }
 
@@ -43,13 +43,13 @@ namespace Kolokwium1_Poprawa
         {
             get
             {
-                return CenaStandardowa;
+                return _cenaStandardowa;
             }
             set
             {
                 if (value > 0)
                 {
-                    CenaStandardowa = value;
+                    _cenaStandardowa = value;
                 }
                 else Console.WriteLine("Cena standardowa nie może być mniejsza od 0");
             }
@@ -59,11 +59,11 @@ namespace Kolokwium1_Poprawa
         {
             get
             {
-                return Obnizka;
+                return _obnizka;
             }
             set
             {
-                if (CenaStandardowa - value > 0) Obnizka = value;
+                if (_cenaStandardowa * (value/100) > 0.0) _obnizka = value;
                 else Console.WriteLine("Obnizka nie moze dac ceny nizszej niz 0");
             }
         }
@@ -72,11 +72,7 @@ namespace Kolokwium1_Poprawa
         {
             get
             {
-                return AktualnaCena = CenaStandardowa * ((100 - obnizka) / 100);
-            }
-            set
-            {
-                AktualnaCena = CenaStandardowa * ((100 - obnizka) / 100);
+                return _aktualnaCena = _cenaStandardowa * ((100 - obnizka) / 100);
             }
         }
 

@@ -1,0 +1,11 @@
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\obj\Debug\netcoreapp3.0\Kolokwium1_Poprawa.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\obj\Debug\netcoreapp3.0\Kolokwium1_Poprawa.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\obj\Debug\netcoreapp3.0\Kolokwium1_Poprawa.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\bin\Debug\netcoreapp3.0\Kolokwium1_Poprawa.exe
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\bin\Debug\netcoreapp3.0\Kolokwium1_Poprawa.deps.json
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\bin\Debug\netcoreapp3.0\Kolokwium1_Poprawa.runtimeconfig.json
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\bin\Debug\netcoreapp3.0\Kolokwium1_Poprawa.runtimeconfig.dev.json
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\bin\Debug\netcoreapp3.0\Kolokwium1_Poprawa.dll
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\bin\Debug\netcoreapp3.0\Kolokwium1_Poprawa.pdb
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\obj\Debug\netcoreapp3.0\Kolokwium1_Poprawa.dll
+C:\Users\LENOVO\source\repos\PawelR\Kolokwium1_Poprawa\Kolokwium1_Poprawa\obj\Debug\netcoreapp3.0\Kolokwium1_Poprawa.pdb
