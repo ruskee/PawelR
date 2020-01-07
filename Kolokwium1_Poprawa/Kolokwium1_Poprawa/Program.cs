@@ -111,7 +111,31 @@ namespace Kolokwium1_Poprawa
             return tab1;
         }
 
-        static void Zadanie4(int[,] tab)
+        public static int[][] NewTable2()
+        {
+            Random rnd = new Random();
+
+            int[][] tab2 = new int[rnd.Next(1, 10)][];
+
+            for (int i = 0; i < tab2.Length; i++)
+            {
+                tab2[i] = new int[rnd.Next(1, 10)];
+            }
+
+            for (int i = 0; i < tab2.Length; i++)
+            {
+                for (int j = 0; j < tab2[i].Length; j++)
+                {
+                    tab2[i][j] = rnd.Next(0, 100);
+                    Console.Write(tab2[i][j] + "\t");
+                }
+                Console.WriteLine();
+            }
+
+            return tab2;
+        }
+
+        public static void Zadanie4(int[,] tab)
         {
 
             int min = int.MaxValue;
@@ -149,29 +173,6 @@ namespace Kolokwium1_Poprawa
             Console.WriteLine("Najmniejszy element w tej tablicy poszarpanej to: " + min);
         }
 
-        public static int[][] NewTable2()
-        {
-            Random rnd = new Random();
-
-            int[][] tab2 = new int[rnd.Next(1, 10)][];
-
-            for (int i = 0; i < tab2.Length; i++)
-            {
-                tab2[i] = new int[rnd.Next(1, 10)];
-            }
-
-            for (int i = 0; i < tab2.Length; i++)
-            {
-                for (int j = 0; j < tab2[i].Length; j++)
-                {
-                    tab2[i][j] = rnd.Next(0, 100);
-                    Console.Write(tab2[i][j] + "\t");
-                }
-                Console.WriteLine();
-            }
-
-            return tab2;
-        }
 
         static void Main(string[] args)
         {
