@@ -92,7 +92,7 @@ namespace Kolokwium1_Poprawa
             }
         }
 
-        public static int[,] NewTable1()
+        static int[,] NewTable1()
         {
             int[,] tab1 = new int[3, 5];
 
@@ -111,7 +111,7 @@ namespace Kolokwium1_Poprawa
             return tab1;
         }
 
-        public static int[][] NewTable2()
+        static int[][] NewTable2()
         {
             Random rnd = new Random();
 
@@ -135,7 +135,8 @@ namespace Kolokwium1_Poprawa
             return tab2;
         }
 
-        public static void Zadanie4(int[,] tab)
+            
+        static void Zadanie4(int[,] tab)
         {
 
             int min = int.MaxValue;
@@ -154,7 +155,7 @@ namespace Kolokwium1_Poprawa
             Console.WriteLine();
         }
 
-        public static void Zadanie4(int[][] tab)
+        static void Zadanie4(int[][] tab)
         {
 
             int min = int.MaxValue;
