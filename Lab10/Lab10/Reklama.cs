@@ -10,6 +10,23 @@ namespace Lab10
         private TypOsoby typOsoby;
         private Zainteresowania zainteresowania;
 
+        public void Test()
+        {
+            if (typOsoby.HasFlag(TypOsoby.Dziecko))
+            {
+                Console.WriteLine("Ta reklama jest dla dzieci");
+            }
+            if (typOsoby < TypOsoby.Dorosly)
+            {
+                Console.WriteLine("Ta reklama jest dla pelnoletnich");
+            }
+
+            for (int i = 0; i <= TypOsoby.Brak.SumaTypowOsob(); i++)
+            {
+                Console.WriteLine((TypOsoby)i);
+            }      
+    }
+
         public Reklama(
             string tresc,
             TypOsoby typOsoby,

@@ -24,8 +24,10 @@ namespace Lab10
 
             Reklama reklama = new Reklama(
                 "Kup teraz",
-                TypOsoby.Dorosly,
+                TypOsoby.Dziecko | TypOsoby.Mlodziez | TypOsoby.Starszy,
                 Zainteresowania.Gaming);
+
+            reklama.Test();
         }
     }
 }

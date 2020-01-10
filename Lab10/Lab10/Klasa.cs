@@ -5,16 +5,18 @@ using System.Text;
 namespace Lab10
 {
     [Flags]
-    enum TypOsoby
+    public enum TypOsoby
     {
+        Brak = 0,
         Dziecko = 1, // [0001]
-        Mlodzierz = 2, // [0010]
+        Mlodziez = 2, // [0010]
         Dorosly = 4, // [0100]
         Starszy = 8 // [1000]
     }
+    //Dziecko + Mlodziez + Starszy = [1011] => 11
 
     [Flags]
-    enum Zainteresowania
+    public enum Zainteresowania
     {
         Sport,
         Gaming,

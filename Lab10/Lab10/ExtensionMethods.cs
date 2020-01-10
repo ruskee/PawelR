@@ -75,5 +75,11 @@ namespace Lab10
             }
             return text.ZliczZnaki(character);
         }
+
+        public static int SumaTypowOsob(this TypOsoby typ)
+        {         
+            return Enum.GetValues(typeof(TypOsoby)).Cast <TypOsoby>().Sum(x => (int)x);          
+        }
+
     }
 }
