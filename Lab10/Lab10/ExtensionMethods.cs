@@ -81,5 +81,9 @@ namespace Lab10
             return Enum.GetValues(typeof(TypOsoby)).Cast <TypOsoby>().Sum(x => (int)x);          
         }
 
+        public static int SumaEnum<T>(this T typ) where T: System.Enum //Combos na kolokwium (4 w 1)
+        {
+            return Enum.GetValues(typeof(T)).Cast<int>()
+        }
     }
 }
