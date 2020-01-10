@@ -1,20 +1,20 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v2.1",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v2.1": {
-      "Lab10/1.0.0": {
+    ".NETCoreApp,Version=v3.0": {
+      "Lab9/1.0.0": {
         "runtime": {
-          "Lab10.dll": {}
+          "Lab9.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Lab10/1.0.0": {
+    "Lab9/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

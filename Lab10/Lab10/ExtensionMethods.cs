@@ -83,7 +83,7 @@ namespace Lab10
         }
   
         
-        public static int SumaEnum<T>(this T typ) where T: System.Enum  // 4 rzeczy w jednej (nieobowiązkowe)
+        public static int SumaEnum<T>(this T type) where T: System.Enum  // 4 rzeczy w jednej (nieobowiązkowe)
         {
             if(typeof(T).GetCustomAttributes<FlagsAttribute>().Any())
             {
