@@ -1,0 +1,11 @@
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\bin\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.exe
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\bin\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.deps.json
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\bin\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.runtimeconfig.json
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\bin\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.runtimeconfig.dev.json
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\bin\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.dll
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\bin\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.pdb
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\obj\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.csprojAssemblyReference.cache
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\obj\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.AssemblyInfoInputs.cache
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\obj\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.AssemblyInfo.cs
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\obj\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.dll
+C:\Users\Student\source\repos\PawelR\KOLOKWIUM_POPRAWA\KOLOKWIUM_POPRAWA\obj\Debug\netcoreapp3.1\KOLOKWIUM_POPRAWA.pdb
