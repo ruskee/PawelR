@@ -79,8 +79,8 @@ namespace KOLOKWIUM_POPRAWA
                     tab[i, j] = i + j;
                     tab[0, 0] = 9;
                     Console.Write(tab[i, j] + "\t");
-                    dol = tab[1, 2] + tab[1, 3] + tab[2,3];
-                    gora = tab[2, 1] + tab[3, 1] + tab[3, 2];
+                    //dol = tab[1, 2] + tab[1, 3] + tab[2,3];
+                    //gora = tab[2, 1] + tab[3, 1] + tab[3, 2];
                 }               
                 Console.WriteLine();
                 
@@ -121,7 +121,7 @@ namespace KOLOKWIUM_POPRAWA
                     break;
 
                 case 3:
-                    //Zad3();
+                    Zad3();
                     break;
 
                 case 4:
