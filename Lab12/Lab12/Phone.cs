@@ -11,7 +11,7 @@ namespace Lab12
         {
             using (StreamWriter telefon = new StreamWriter(fileName, true))
             {
-                telefon.Write($"{person.Phone}");
+                telefon.Write($"{person.Phone}\n");
             }
         }
     }

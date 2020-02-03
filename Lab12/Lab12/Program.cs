@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Linq;
 
+
 namespace Lab12
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var reader = new StreamFileReader();
+            var reader = new Reader();
             var people = reader.ReadPeople("dane.txt");
 
             var sortedPeople = people.OrderBy(x => x.LastName).ThenBy(x => x.Name);
@@ -22,6 +23,10 @@ namespace Lab12
 
             Phone phone = new Phone();
             phone.PhoneToFile(sortedPeople.First(), "phone_one.txt");
+
+            writer.WriteToFileOnlyPhones(sortedPeople);
+
+            writer.WriteTheLetters(sortedPeople);
 
             /* 
             var telefon = reader.ReadPeople("phone_list.txt");
