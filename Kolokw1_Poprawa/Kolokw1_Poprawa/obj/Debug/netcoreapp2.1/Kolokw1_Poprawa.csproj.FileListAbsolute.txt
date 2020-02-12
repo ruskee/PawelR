@@ -1,0 +1,10 @@
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\bin\Debug\netcoreapp2.1\Kolokw1_Poprawa.deps.json
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\bin\Debug\netcoreapp2.1\Kolokw1_Poprawa.runtimeconfig.json
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\bin\Debug\netcoreapp2.1\Kolokw1_Poprawa.runtimeconfig.dev.json
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\bin\Debug\netcoreapp2.1\Kolokw1_Poprawa.dll
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\bin\Debug\netcoreapp2.1\Kolokw1_Poprawa.pdb
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\obj\Debug\netcoreapp2.1\Kolokw1_Poprawa.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\obj\Debug\netcoreapp2.1\Kolokw1_Poprawa.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\obj\Debug\netcoreapp2.1\Kolokw1_Poprawa.AssemblyInfo.cs
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\obj\Debug\netcoreapp2.1\Kolokw1_Poprawa.dll
+C:\Users\student\source\repos\PawelRR\Kolokw1_Poprawa\Kolokw1_Poprawa\obj\Debug\netcoreapp2.1\Kolokw1_Poprawa.pdb

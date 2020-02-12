@@ -34,6 +34,7 @@ namespace Kolokw1_Poprawa
         {
 
         }
+
         //Zad4
         public static void Zad4_Otworz(int PIN)
         {
