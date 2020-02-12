@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Lab12
 {
-    class StreamFileReader : IReader
+    class Reader : IReader
     {
         public List<Person> ReadPeople(string fileName)
         {
