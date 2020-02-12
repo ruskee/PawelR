@@ -3,29 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kolokwium2_Poprawa", "Kolokwium2_Poprawa\Kolokwium2_Poprawa.vcxproj", "{6BE57062-968A-4952-9401-85893C5ABCB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolokwium2_Poprawa", "Kolokwium2_Poprawa\Kolokwium2_Poprawa.csproj", "{4A1481A1-BE97-46A0-9DBE-016A65FE8490}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6BE57062-968A-4952-9401-85893C5ABCB6}.Debug|x64.ActiveCfg = Debug|x64
-		{6BE57062-968A-4952-9401-85893C5ABCB6}.Debug|x64.Build.0 = Debug|x64
-		{6BE57062-968A-4952-9401-85893C5ABCB6}.Debug|x86.ActiveCfg = Debug|Win32
-		{6BE57062-968A-4952-9401-85893C5ABCB6}.Debug|x86.Build.0 = Debug|Win32
-		{6BE57062-968A-4952-9401-85893C5ABCB6}.Release|x64.ActiveCfg = Release|x64
-		{6BE57062-968A-4952-9401-85893C5ABCB6}.Release|x64.Build.0 = Release|x64
-		{6BE57062-968A-4952-9401-85893C5ABCB6}.Release|x86.ActiveCfg = Release|Win32
-		{6BE57062-968A-4952-9401-85893C5ABCB6}.Release|x86.Build.0 = Release|Win32
+		{4A1481A1-BE97-46A0-9DBE-016A65FE8490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1481A1-BE97-46A0-9DBE-016A65FE8490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1481A1-BE97-46A0-9DBE-016A65FE8490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1481A1-BE97-46A0-9DBE-016A65FE8490}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {49221232-39B9-48C6-9064-FAEB80F4FAB9}
+		SolutionGuid = {3313517B-986B-4F9F-8D35-BD6A8D4ED488}
 	EndGlobalSection
 EndGlobal
